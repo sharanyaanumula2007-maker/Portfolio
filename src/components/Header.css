@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nosifer&family=Oleo+Script:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.header{
+    display: flex;
+    align-items: center;
+    background-image: url("/images/header-background.jpg");
+    opacity: 0.8;
+    border-radius: 15px;
+    padding: 5px 20px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+.left-section h1{
+    background: linear-gradient(to bottom, black, rgb(102, 101, 101));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    border-radius: 10px;
+    font-family: "Nosifer", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-contents{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.nav-contents a{
+    text-decoration: none;
+    color:rgba(19, 18, 18, 0.923);
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "Germania One", serif;;
+}
+
+.right-section{
+    flex: 1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+img{
+    opacity: 0.9;
+}
