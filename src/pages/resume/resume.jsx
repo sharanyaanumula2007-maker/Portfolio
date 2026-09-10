@@ -20,7 +20,7 @@ export function Resume() {
                     Download Resume
                 </a>
                 <Document file={resume}>
-                    <Page pageNumber={1} width={650}/>
+                    <Page pageNumber={1} width={750}/>
                 </Document>
             </div>
         </>
