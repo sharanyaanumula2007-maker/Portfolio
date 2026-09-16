@@ -45,3 +45,47 @@
 .intro::first-letter{
     font-size: 50px;
 }
+
+@media (max-width: 768px) {
+    .container {
+        min-height: auto;
+        padding: 30px 10px;
+        box-sizing: border-box;
+    }
+
+    .about {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: auto;
+        padding: 25px 20px;
+        font-size: 1rem;
+        border-width: 3px;
+    }
+
+    .intro {
+        line-height: 1.6;
+    }
+
+    .intro::first-letter {
+        font-size: 35px;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .detail {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .detail h3 {
+        margin: 0 0 5px;
+    }
+
+    .detail p {
+        margin: 0;
+        line-height: 1.5;
+    }
+}

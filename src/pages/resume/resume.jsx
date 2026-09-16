@@ -1,6 +1,7 @@
 import './resume.css';
 import { Header } from "../../components/Header";
 import { Document, Page, pdfjs } from "react-pdf";
+import { useEffect, useState } from "react";
 import resume from "../../assets/Resume.pdf";
 
 import "react-pdf/dist/Page/AnnotationLayer.css";
@@ -12,6 +13,16 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 export function Resume() {
+    const [pageWidth,setpageWidth] =useState(750);
+    useEffect (()=>{
+        const updateWidth =() => {
+        setpageWidth(window.innerWidth <= 768 ?window.innerWidth-30 :750);
+    };
+    updateWidth();
+    window.addEventListener("resize",updateWidth);
+    return () => window.removeEventListener("resize",updateWidth);
+    },[]);
+    
     return (
         <>
             <Header />
@@ -20,7 +31,7 @@ export function Resume() {
                     Download Resume
                 </a>
                 <Document file={resume}>
-                    <Page pageNumber={1} width={750}/>
+                    <Page pageNumber={1} width={pageWidth} />
                 </Document>
             </div>
         </>
