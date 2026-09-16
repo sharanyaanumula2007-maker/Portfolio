@@ -16,7 +16,7 @@ export function HomePage(){
                 <div className="matter">
                     <h3>Hi! I'm</h3>
                     <h1>Sharanya</h1>
-                    <p>A Computer Science and Business Systems student interested in web development and programming. I enjoy creating modern web applications, exploring different concepts in computer science, and strengthening my problem-solving skills through coding. I am continuously working on improving my technical knowledge and building projects to gain practical experience.</p>
+                    <p>A Computer Science and Business Systems student interested in web development and programming. I enjoy creating modern web applications, exploring different concepts in computer science, and strengthening my problem-solving skills through coding.</p>
                 </div>
                 <div className="image">
                     <img src="/images/profile-pic.png" alt="profile-image"/>

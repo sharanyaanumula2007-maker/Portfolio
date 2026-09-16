@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nosifer&family=Oleo+Script:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Oleo+Script:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap');
 .header{
     display: flex;
     align-items: center;
@@ -17,25 +16,34 @@
     -webkit-background-clip: text;
     color: transparent;
 
-    border-radius: 10px;
-    font-family: "Nosifer", sans-serif;
-    font-size: 45px;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Special Elite", system-ui;
+    font-style: none;
+    font-size: 49px;
+    font-weight: 1800;
 }
 
 .nav-contents{
     display: flex;
-    gap: 50px;
+    gap: 45px;
     align-items: center;
 }
 
 .nav-contents a{
     text-decoration: none;
     color:rgba(19, 18, 18, 0.923);
-    font-size: 26px;
-    font-weight: 500;
-    font-family: "Germania One", serif;;
+    
+    font-size: 21px;
+    font-weight: 600;
+    font-family: "Special Elite", system-ui;
+    font-style: none;
+}
+
+.nav-contents a:hover{
+    background-color: #F4E8C1;
+}
+
+.nav-contents a.active{
+    color: #028383;
 }
 
 .right-section{

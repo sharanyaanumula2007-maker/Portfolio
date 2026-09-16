@@ -29,23 +29,29 @@
 
 .project-name{
     font-size: 35px;
-    color: rgb(248, 251, 200);
+    font-weight: 1000;
+    color: #02fbf3d7;
+    -webkit-text-stroke: 0.2px white;
 }
 
 .project-description{
     font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 1px;   
+    word-spacing: 3px;
 }
 
 .project-link{
     text-decoration:none;
-    color: rgba(255, 255, 255, 0.851);
+    color: rgba(255, 255, 255, 0.961);
     font-size: 23px;
+    font-weight: 600;
     margin: 8px 70px;
     margin-top: auto;
     padding: 15px 30px;
     text-align: center;
 
-    background: rgba(17, 162, 150, 0.157);
+    background: #028383df;
     border: 1px solid rgba(176, 249, 232, 0.04);
     border-radius: 15px;
 
@@ -60,6 +66,6 @@
 }
 
 .project-link:hover{
-    background: rgba(17, 162, 150, 0.375);
+    background: #028383ef;
     transform: translateY(-2px);
 }

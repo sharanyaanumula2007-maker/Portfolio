@@ -10,11 +10,11 @@ export function Header() {
         </div>
         <div className="right-section">
             <div className="nav-contents">
-                <NavLink to="/">Home</NavLink> 
-                <NavLink to="/about">About</NavLink> 
-                <NavLink to="/projects">Projects</NavLink> 
-                <NavLink to="/resume">Resume</NavLink> 
-                <NavLink to="/contact">Get In Touch</NavLink> 
+                <NavLink to="/" className={({isActive})=> isActive ?"active":""}>Home</NavLink> 
+                <NavLink to="/about" className={({isActive})=> isActive ?"active":""}>About</NavLink> 
+                <NavLink to="/projects" className={({isActive})=> isActive ?"active":""}>Projects</NavLink> 
+                <NavLink to="/resume" className={({isActive})=> isActive ?"active":""}>Resume</NavLink> 
+                <NavLink to="/contact" className={({isActive})=> isActive ?"active":""}>Get In Touch</NavLink> 
             </div>
         </div>
       </div> 
